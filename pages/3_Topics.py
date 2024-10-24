@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.image("assets/logo_finstory_symboltext.png", width=100)
+
 tab1, tab2, tab3 = st.tabs(["Business", "Sport", "Family"])
 
 with tab1:
