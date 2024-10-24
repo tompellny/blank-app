@@ -1,7 +1,18 @@
 import streamlit as st
 
-tab1, tab2 = st.tabs(["Business", "Sport", "Family"])
+tab1, tab2, tab3 = st.tabs(["Business", "Sport", "Family"])
 
-tab1.write("this is tab 1")
+with tab1:
+    st.title('Intro Business')
+    st.write("")
+    st.subheader("Section 1", divider="red")
 
-tab2.write("this is tab 2")
+with tab2:
+    st.title('Intro Sport')
+    st.write("")
+    st.subheader("Section 1", divider="red")
+
+with tab3:
+    st.title('Intro Family')
+    st.write("")
+    st.subheader("Section 1", divider="red")
